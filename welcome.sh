@@ -13,4 +13,4 @@ echo -e "${RED}  ██   ██   █ ██  ██  ██  ██  ██ ${
 echo -e "${RED}  ██████   █  ██  ██    ██    ██ ${NORMAL}"
 echo -e "${RED}  ██   ██     ██  ██          ██ ${NORMAL}"
 echo -e "${RED}  ██    ██    ██  ██          ██ ${NORMAL}"
-echo -e "${WHITE}░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ ${NORMAL}"
+echo -e "${WHITE}██████████████████████████████ ${NORMAL}"
