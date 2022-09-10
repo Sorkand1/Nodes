@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "-----------------------------------------------------------------------------"
-curl -s https://raw.githubusercontent.com/sorkand1/main/welcome.sh | bash
+curl -s https://raw.githubusercontent.com/sorkand1/nodes/main/welcome.sh | bash
 echo "-----------------------------------------------------------------------------"
 if [ ! $ALCHEMY_KEY ]; then
 	read -p "Введите ваш HTTP (ПРИМЕР: https://eth-goerli.alchemyapi.io/v2/xZXxxxxxxxxxxc2q_bzxxxxxxxxxxWTN): " ALCHEMY_KEY
