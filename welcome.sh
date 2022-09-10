@@ -13,4 +13,4 @@ echo -e "${GREEN}██   ██   █ ██  ██  ██  ██  ██ ${
 echo -e "${GREEN}██████   █  ██  ██    ██    ██ ${NORMAL}"
 echo -e "${GREEN}██   ██     ██  ██          ██ ${NORMAL}"
 echo -e "${GREEN}██    ██    ██  ██          ██ ${NORMAL}"
-echo -e "${GREEN} ${NORMAL}"
+
