@@ -8,9 +8,9 @@ function colors {
 
 colors
 
-echo -e "${GREEN}██████     ███  ████      ████ ${NORMAL}"
-echo -e "${GREEN}██   ██   █ ██  ██  ██  ██  ██ ${NORMAL}"
-echo -e "${GREEN}██████   █  ██  ██    ██    ██ ${NORMAL}"
-echo -e "${GREEN}██   ██     ██  ██          ██ ${NORMAL}"
-echo -e "${GREEN}██    ██    ██  ██          ██ ${NORMAL}"
-
+echo -e "${RED}  ██████     ███  ████      ████ ${NORMAL}"
+echo -e "${RED}  ██   ██   █ ██  ██  ██  ██  ██ ${NORMAL}"
+echo -e "${RED}  ██████   █  ██  ██    ██    ██ ${NORMAL}"
+echo -e "${RED}  ██   ██     ██  ██          ██ ${NORMAL}"
+echo -e "${RED}  ██    ██    ██  ██          ██ ${NORMAL}"
+echo -e "${WHITE}░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ ${NORMAL}"
