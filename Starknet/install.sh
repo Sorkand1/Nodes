@@ -17,8 +17,8 @@ sudo apt install build-essential libssl-dev libffi-dev python3-dev screen git py
 sudo apt-get install libgmp-dev -y &>/dev/null
 pip3 install fastecdsa &>/dev/null
 sudo apt-get install -y pkg-config &>/dev/null
-curl -s https://raw.githubusercontent.com/razumv/helpers/main/tools/install_ufw.sh | bash &>/dev/null
-curl -s https://raw.githubusercontent.com/razumv/helpers/main/tools/install_rust.sh | bash &>/dev/null
+curl -s https://raw.githubusercontent.com/sorkand1/soft/main/install_ufw.sh | bash &>/dev/null
+curl -s https://raw.githubusercontent.com/sorkand1/soft/main/install_rust.sh | bash &>/dev/null
 rustup default nightly &>/dev/null
 source $HOME/.cargo/env &>/dev/null
 sleep 1
