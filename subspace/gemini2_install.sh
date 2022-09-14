@@ -14,7 +14,7 @@ echo "Готово"
 echo "-----------------------------------------------------------------------------"
 #Додавання Кошелька
 if [ ! $YOUR_WALLET ]; then
-	read -p "Адрес кошелька Gemini2: " YOUR_WALLET
+	read -p "Адрес кошелька Subspace Gemini2: " YOUR_WALLET
 fi
 echo 'Адрес кошелька: ' $YOUR_WALLET
 sleep 1
