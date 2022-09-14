@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo "-----------------------------------------------------------------------------"
-curl -s https://raw.githubusercontent.com/sorkand1/nodes/main/welcome.sh | bash
-echo "-----------------------------------------------------------------------------"
 #Створення імя ноди
 if [ ! $NODE_NAME ]; then
 	read -p "Введите имя вашей ноды : " NODE_NAME
