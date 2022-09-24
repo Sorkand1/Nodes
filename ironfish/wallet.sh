@@ -1,19 +1,19 @@
 #!/bin/bash
 
 #Створення імя ноди
-if [ ! $myname ]; then
-	read -p "Введите имя вашей ноды : " myname
+if [ ! $MYNAME ]; then
+	read -p "Введите имя вашей ноды : " MYNAME
 fi
-echo 'Имя вашей ноды: ' $myname
+echo 'Имя вашей ноды: ' $MYNAME
 sleep 1
 echo "Готово"
 echo "-----------------------------------------------------------------------------"
-ironfish accounts:create $myname
+ironfish accounts:create $MYNAME
 sleep 1
-ironfish accounts:use $myname
+ironfish accounts:use $MYNAME
 sleep 1
-ironfish config:set nodeName $myname
-ironfish config:set blockGraffiti $myname
+ironfish config:set nodeName $MYNAME
+ironfish config:set blockGraffiti $MYNAME
 ironfish config:set minerBatchSize 60000
 ironfish config:set enableTelemetry true
 echo "Имя ноды успешно добавлено"
