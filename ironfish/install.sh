@@ -13,5 +13,5 @@ echo "alias ironfish='docker exec ironfish ./bin/run'" >> ~/.profile
 source ~/.profile
 echo "-----------------------------------------------------------------------------"
 echo "Запускаем контейнеры введя команды в гайде"
-sleep 1
+
 
