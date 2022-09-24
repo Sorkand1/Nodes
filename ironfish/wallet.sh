@@ -9,7 +9,7 @@ sleep 1
 echo 'export='$myname >> $HOME/.ironfish/config.json
 echo "Готово"
 echo "-----------------------------------------------------------------------------"
-ironfish accounts:create $myname
+ironfish accounts:create myname
 sleep 1
 ironfish accounts:use $myname
 sleep 1
