@@ -9,7 +9,9 @@ sleep 1
 echo "Готово"
 echo "-----------------------------------------------------------------------------"
 ironfish accounts:create $myname
+sleep 1
 ironfish accounts:use $myname
+sleep 1
 ironfish config:set nodeName $myname
 ironfish config:set blockGraffiti $myname
 ironfish config:set minerBatchSize 60000
