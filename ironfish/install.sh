@@ -7,7 +7,8 @@ echo "--------------------------------------------------------------------------
 
 
 #Старт установки
-
+echo "Устанавливаем docker и создаем alias"
+echo "-----------------------------------------------------------------------------"
 bash <(curl -s https://raw.githubusercontent.com/sorkand1/tools/main/install_docker.sh)
 echo "alias ironfish='docker exec ironfish ./bin/run'" >> ~/.profile
 source ~/.profile
