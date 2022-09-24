@@ -6,6 +6,7 @@ if [ ! $myname ]; then
 fi
 echo 'Имя вашей ноды: ' $myname
 sleep 1
+echo 'export='$myname >> $HOME/.ironfish/config.json
 echo "Готово"
 echo "-----------------------------------------------------------------------------"
 ironfish accounts:create $myname
