@@ -1,5 +1,5 @@
 #!/bin/bash
-#nodesguru
+
 echo "-----------------------------------------------------------------------------"
 curl -s https://raw.githubusercontent.com/sorkand1/nodes/main/welcome.sh | bash
 echo "-----------------------------------------------------------------------------"
