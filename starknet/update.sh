@@ -3,22 +3,34 @@
 echo "-----------------------------------------------------------------------------"
 curl -s https://raw.githubusercontent.com/sorkand1/nodes/main/welcome.sh | bash
 echo "-----------------------------------------------------------------------------"
-echo "Начинаем обновление репрозитория "
+echo "Устанавливаем зависимости"
+bash <(curl -s https://raw.githubusercontent.com/DOUBLE-TOP/tools/main/main.sh) &>/dev/null
+bash <(curl -s https://raw.githubusercontent.com/DOUBLE-TOP/tools/main/docker.sh) &>/dev/null
 echo "-----------------------------------------------------------------------------"
-cd ~/pathfinder/py
-git fetch &>/dev/null
-git checkout v0.1.8-alpha &>/dev/null
-echo "Репозиторий успешно обновлен, начинаем билд"
+echo "Обновляем репрозиторий"
 echo "-----------------------------------------------------------------------------"
-python3 -m venv .venv &>/dev/null
-source .venv/bin/activate &>/dev/null
-PIP_REQUIRE_VIRTUALENV=true pip install --upgrade pip &>/dev/null
-PIP_REQUIRE_VIRTUALENV=true pip install -r requirements-dev.txt &>/dev/null
-cargo build --release --bin pathfinder &>/dev/null
-sleep 2
-source $HOME/.bash_profile &>/dev/null
-echo "Билд завершен успешно"
+cd $HOME/pathfinder
+git fetch
+git checkout `curl https://api.github.com/repos/eqlabs/pathfinder/releases/latest -s | jq .name -r`
 echo "-----------------------------------------------------------------------------"
-systemctl restart starknet
+echo "Останавливаем старую версию StarkNet, запущенную через systemd"
+echo "-----------------------------------------------------------------------------"
+sudo systemctl stop starknet &>/dev/null
+sudo systemctl disable starknet &>/dev/null
+rm -rf $HOME/pathfinder/py/.venv &>/dev/null
+echo "-----------------------------------------------------------------------------"
+echo "Создаем env файл с переменной Alchemy или infura"
+echo "-----------------------------------------------------------------------------"
+source $HOME/.bash_profile
+echo "PATHFINDER_ETHEREUM_API_URL=$ALCHEMY_KEY" > pathfinder-var.env
+echo "-----------------------------------------------------------------------------"
+echo "Скачиваем последнюю версию docker image"
+docker-compose pull
+echo "Скачали, переходим к запуску"
+echo "-----------------------------------------------------------------------------"
+mkdir -p $HOME/pathfinder/pathfinder
+chown -R 1000.1000 .
+sleep 1
+docker-compose up -d
 echo "Нода обновлена и запущена"
 echo "-----------------------------------------------------------------------------"
