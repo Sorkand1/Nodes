@@ -10,7 +10,7 @@ colors
 
 echo -e "${RED}  ██████      ███  ████    ████ ${NORMAL}"
 echo -e "${RED}  ██   ██   ██ ██  ██  █  █  ██ ${NORMAL}"
-echo -e "${RED}  ██████  ██   ██  ██   ██   ██ ${NORMAL}"
+echo -e "${RED}  ██████   ██  ██  ██   ██   ██ ${NORMAL}"
 echo -e "${RED}  ██   ██      ██  ██        ██ ${NORMAL}"
 echo -e "${RED}  ██    ██     ██  ██        ██ ${NORMAL}"
 
