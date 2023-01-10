@@ -38,8 +38,11 @@ sudo nano .env
 In the editor we will open the <b>.env</b> file that we need to edit. We will have to change the following lines
 
 ENABLE_PROPOSER=<b>false changes true</b>
+
 L1_PROPOSER_PRIVATE_KEY=<b>you privat key</b>
+
 L2_SUGGESTED_FEE_RECIPIENT=<b>you address_0x</b>
+
 <b>Saving the editor CTRL+X,Y,Enter</b>
 ```
 sudo docker-compose up -d
