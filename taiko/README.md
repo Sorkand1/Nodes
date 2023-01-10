@@ -24,3 +24,6 @@ Start node
 ```
 docker-compose up -d
 ```
+
+Waiting for the you node sync,you can see the lash block HERE(https://l2explorer.a1.taiko.xyz/)
+
