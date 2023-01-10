@@ -29,10 +29,10 @@ Waiting for the you node sync,you can see the lash block [HERE](https://l2explor
 
 then you can run proposer(If you want)
 
-Editing the file .env
+Editing the file <b>.env</b>
 
 ```
 sudo docker-compose down
 sudo nano .env
 ```
-In the editor we will open the <b>.env<b> file that we need to edit. We will have to change the following lines
+In the editor we will open the <b>.env</b> file that we need to edit. We will have to change the following lines
