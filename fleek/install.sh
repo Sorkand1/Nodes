@@ -16,7 +16,7 @@ function colors {
 }
 
 function main_tools {
-  bash <(curl -s https://raw.githubusercontent.com/DOUBLE-TOP/tools/main/main.sh)
+  bash <(curl -s https://raw.githubusercontent.com/sorkand1/tools/main/main.sh)
 }
 
 function rust {
