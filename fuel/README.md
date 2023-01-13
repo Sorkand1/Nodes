@@ -79,3 +79,59 @@ impl Counter for Contract {
 }
 ```
 
+Press ESC and enter <b>:w</b>, then <b>ENTER</b> <b>:q</b>and press <b>ENTER</b>, you should be thrown out of the contract!
+
+
+```
+fuelup toolchain new test_toolchain
+fuelup component add forc@0.33.0
+```
+
+```
+fuelup component add forc-wallet
+cd counter-contract
+forc build
+forc-wallet init
+```
+Asked to enter a password - think up any, confirm it, <b> displays mnemonics and save mnemonics and password</b>! 
+
+```
+forc-wallet new
+```
+
+It will ask for a password - enter the password from the previous point, the address of the purse should pop up, <b>Save the address</b>
+
+Request tokens by entering the wallet address [THERE](https://faucet-beta-2.fuel.network/)
+You can check if they came [THERE](https://fuellabs.github.io/block-explorer-v2/)
+
+ANYTHING BELOW MAY NOT WORK RIGHT THE FIRST TIME, THAT'S NORMAL! (There may be errors like Invalid Signature, try re-signing)
+
+
+```
+forc deploy --url node-beta-2.fuel.network/graphql --gas-price 1
+```
+
+Enter the wallet address and press ENTER The command will show the Transaction id line Copy it Press CTRL + C or Enter
+
+```
+forc wallet sign <Ваш Transaction id> 0
+```
+
+enter the password, press Enter and get Signature - Save it ! 
+
+```
+forc deploy --url node-beta-2.fuel.network/graphql --gas-price 1
+```
+
+Enter the wallet address and press ENTER Enter Signature from the previous point and press ENTER
+
+<b>IMPORTANT</b>
+Mnemonics, Address, Signature, Transaction id, Password must be saved
+
+You can delete the contract with the following commands 
+
+```
+rm -rf fuel-project
+rm -rf .fuel
+rm -rf .fuelup
+```
