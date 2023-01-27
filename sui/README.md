@@ -48,3 +48,34 @@ Start SUI Full Node
 ```
 docker-compose up -d
 ```
+
+<B>You can check your node [HERE](https://sui.explorers.guru/node) or [HERE](https://www.scale3labs.com/check/sui)</B>
+Useful commands
+
+Check Log
+
+```
+docker logs -f sui_fullnode_1
+```
+
+Restart
+
+```
+docker-compose restart
+```
+
+Stop node
+
+```
+docker-compose down
+```
+
+Delete node
+
+```
+docker-compose down -v
+rm -rf ~/sui /var/sui/ /usr/local/bin/sui*
+rm /etc/systemd/system/suid.service
+```
+
+
