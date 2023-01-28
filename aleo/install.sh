@@ -89,5 +89,5 @@ line
 echo "creating systemd file, adding to autostart, starting"
 systemd_aleo
 echo "installation complete, check logs by command:"
-echo "aleo_log"
+echo "sudo journalctl -fn 100 -u aleod"
 echo "and wait for -bootstrap complete-"
