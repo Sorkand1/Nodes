@@ -22,7 +22,6 @@ function main_tools {
 function rust {
   bash <(curl -s https://raw.githubusercontent.com/sorkand1/tools/main/install_rust.sh)
   source $HOME/.profile
-  cargo install sccache
 }
 
 function build_ursa {
