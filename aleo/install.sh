@@ -60,8 +60,8 @@ WantedBy=multi-user.target
 EOF
 
   sudo systemctl daemon-reload
-  sudo systemctl enable fleek &>/dev/null
-  sudo systemctl restart fleek
+  sudo systemctl enable aleou
+  sudo systemctl restart aleou
 }
 
 function log {
