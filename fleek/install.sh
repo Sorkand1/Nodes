@@ -17,6 +17,8 @@ function colors {
 
 function main_tools {
   bash <(curl -s https://raw.githubusercontent.com/sorkand1/tools/main/main.sh)
+  sudo apt install curl tar wget clang pkg-config libssl-dev libclang-dev jq build-essential bsdmainutils git make ncdu gcc git jq chrony liblz4-tool -y
+  sudo apt install -y uidmap dbus-user-session
 }
 
 function rust {
