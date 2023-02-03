@@ -44,5 +44,7 @@ line
 echo "Setup validator"
 line
 setup_validator
+line
+echo "open validator"
 open_validator
   
