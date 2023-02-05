@@ -41,7 +41,7 @@ function download_g {
 }
 
 function start_file {
-  IMAGE="mysten/sui-node:6fa859ba7590deb6db72aad42ca689efd69d5329"
+  IMAGE="mysten/sui-node:3258863cf4d0469a55da2e66629a7f04831f3d3e"
   wget -O $HOME/sui/docker-compose.yaml https://raw.githubusercontent.com/MystenLabs/sui/main/docker/fullnode/docker-compose.yaml
   sed -i.bak "s|image:.*|image: $IMAGE|" $HOME/sui/docker-compose.yaml
 }
