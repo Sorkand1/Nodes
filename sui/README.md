@@ -47,7 +47,7 @@ wget -O $HOME/sui/genesis.blob  https://github.com/MystenLabs/sui-genesis/raw/ma
 Download docker-compose file and update Sui Node image in it
 
 ```
-IMAGE="mysten/sui-node:2698314d139a3018c2333ddaa670a7cb70beceee"
+IMAGE="mysten/sui-node:3258863cf4d0469a55da2e66629a7f04831f3d3e"
 wget -O $HOME/sui/docker-compose.yaml https://raw.githubusercontent.com/MystenLabs/sui/main/docker/fullnode/docker-compose.yaml
 sed -i.bak "s|image:.*|image: $IMAGE|" $HOME/sui/docker-compose.yaml
 ```
