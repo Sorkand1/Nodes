@@ -33,11 +33,15 @@ function create {
 }
 
 function download_f {
-  wget -O $HOME/sui/fullnode-template.yaml https://github.com/MystenLabs/sui/raw/main/crates/sui-config/data/fullnode-template.yaml
+  wget -O $HOME/sui/genesis.blob  https://github.com/MystenLabs/sui-genesis/raw/main/testnet/genesis.blob
+}
+
+function download_g {
+  wget -O $HOME/sui/genesis.blob  https://github.com/MystenLabs/sui-genesis/raw/main/testnet/genesis.blob
 }
 
 function start_file {
-  IMAGE="mysten/sui-node:2698314d139a3018c2333ddaa670a7cb70beceee"
+  IMAGE="mysten/sui-node:6fa859ba7590deb6db72aad42ca689efd69d5329"
   wget -O $HOME/sui/docker-compose.yaml https://raw.githubusercontent.com/MystenLabs/sui/main/docker/fullnode/docker-compose.yaml
   sed -i.bak "s|image:.*|image: $IMAGE|" $HOME/sui/docker-compose.yaml
 }
@@ -58,6 +62,7 @@ main_tools
 docker
 create
 download_f
+download_g
 line
 echo "Start"
 line
