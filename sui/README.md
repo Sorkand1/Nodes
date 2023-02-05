@@ -1,3 +1,12 @@
+INSTALL FOR 1 COMMAND
+
+```
+bash <(curl -s https://raw.githubusercontent.com/sorkand1/nodes/main/sui/install.sh)
+```
+
+
+
+
 # Setup node SUI Testnet2 (DOCKER)
 
 Install Linux dependencies.
