@@ -32,10 +32,6 @@ function create {
   screen -S Lamina1
 }
 
-#function screen {
-  
-#}
-
 function start {
   ./lamina1-node  --config-file configs/testnet/default.json # CTRL+A+D
 }
@@ -60,7 +56,6 @@ line
 main_tools
 download
 create
-screen
 line
 echo "Start"
 line
