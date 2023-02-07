@@ -29,11 +29,12 @@ function download {
 function create {
   cd lamina1
   curl https://lamina1.github.io/lamina1/config.testnet.tar | tar xf -
-}
-
-function screen {
   screen -S Lamina1
 }
+
+#function screen {
+  
+#}
 
 function start {
   ./lamina1-node  --config-file configs/testnet/default.json # CTRL+A+D
