@@ -32,20 +32,6 @@ function create {
   screen -S Lamina1
 }
 
-function start {
-  ./lamina1-node  --config-file configs/testnet/default.json # CTRL+A+D
-}
-
-function status {
-  ./get_my_nodeid.sh
-  ./check-bootstrap.sh
-}
-
-function log {
-  screen -r Lamina -1
-}
-
-
 
 colors
 line
@@ -57,10 +43,4 @@ main_tools
 download
 create
 line
-echo "Start"
-line
-start
-line
-echo "Status and Log"
-status
-log
+
