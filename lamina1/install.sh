@@ -29,7 +29,7 @@ function download {
 function create {
   cd lamina1
   curl https://lamina1.github.io/lamina1/config.testnet.tar | tar xf -
-  screen -S Lamina1
+  screen -S lamina1
 }
 
 
