@@ -15,7 +15,7 @@ function colors {
 }
 
 function docker_down {
-  docker-compose down
+  docker rm -f ironfish
 }
 
 function docker_pull {
