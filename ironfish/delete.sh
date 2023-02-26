@@ -20,6 +20,9 @@ function docker_down {
 
 function docker_delete {
   rm -rf .ironfish
+  rm -rf .fuelup
+  rm -rf .okp4d
+  rm -rf .manta
 }
 
 
