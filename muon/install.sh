@@ -45,4 +45,5 @@ setup_compose
 line
 echo "Start"
 docker_start
+line
   
