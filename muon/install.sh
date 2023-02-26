@@ -27,7 +27,7 @@ function setup_compose {
 }
 
 function docker_start {
-  docker compose up -d
+  docker-compose up -d
 }
 
 colors
